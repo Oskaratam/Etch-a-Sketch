@@ -1,0 +1,24 @@
+body{
+    background-color:black;
+    padding:0;
+}
+.container {
+    display:flex;
+    width:1000px;
+    height:850px;
+    background-color:white;
+    margin: 0 auto;
+}
+.tab {
+    width:300px;
+    height:850px;
+}
+
+.paintArea {
+    display:grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    width:700px;
+    height:700px; 
+    border: 2px solid black;
+}
