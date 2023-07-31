@@ -5,7 +5,7 @@
 4.Add slider to change size of the paintArea +
 5.Add "clear" button +
 6.Add eraser +
-7.Add button to switch colors
+7.Add button to switch colors +
 */
 
 const body = document.querySelector('body'),
@@ -74,7 +74,9 @@ const eraserOf = () => {
 }
 
 colorBtn.addEventListener('input', (e) => {
-    paintColor = colorBtn.value;
+    if(! eraserBtn.hasClass('clicked')){
+        paintColor = colorBtn.value;
+    } 
 })
 
 

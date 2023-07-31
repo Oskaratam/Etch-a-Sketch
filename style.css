@@ -4,6 +4,7 @@ body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     cursor: default;
 }
+/*MAIN SECTIONS*/
 .container {
     display:flex;
     width:1000px;
@@ -52,7 +53,7 @@ body{
     cursor:pointer;
     width:30px;
     height:40px;
-    background-color:aquamarine;
+    background-color:rgb(29, 29, 29);
     border-radius:15px;
     box-shadow: 0 0 10px black;
 }
@@ -100,8 +101,6 @@ button {
 .clicked {
     box-shadow: 0 0 30px 2px white;
 }
-
-
 label{
     font-size:30px;
 }
