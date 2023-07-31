@@ -74,9 +74,9 @@ const eraserOf = () => {
 }
 
 colorBtn.addEventListener('input', (e) => {
-    if(! eraserBtn.hasClass('clicked')){
-        paintColor = colorBtn.value;
-    } 
+    paintColor = colorBtn.value; 
+    eraserBtn.classList.remove('clicked');
+    paintBtn.classList.toggle('clicked');
 })
 
 
