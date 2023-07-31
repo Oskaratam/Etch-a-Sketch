@@ -2,7 +2,7 @@
 1.Create a layout +
 2.Make a grid paintArea +
 3.Add ability to paint +
-4.Add slider to change size of the paintArea
+4.Add slider to change size of the paintArea +
 5.Add "clear" button 
 6.Add eraser 
 7.Add button to switch colors
@@ -11,7 +11,8 @@
 const body = document.querySelector('body'),
       paintArea = document.getElementById('paintArea'),
       sliderSize = document.getElementById('sliderSize'),
-      currentSize = document.getElementById('currentSize');
+      currentSize = document.getElementById('currentSize'),
+      clearBtn = document.getElementById('clearBtn');
 
 let = columnsCount = 16,
       rowsCount = 16;
@@ -52,6 +53,11 @@ sliderSize.addEventListener('input', () => {
     currentSize.innerHTML = `${rowsCount}x${columnsCount}`;
 })
 
+const clearAll = () => {
+    document.querySelectorAll('.box').forEach(box => {
+        box.style.backgroundColor = 'white'
+})
+}
 
 
 

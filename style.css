@@ -8,11 +8,12 @@ body{
     width:1000px;
     height:850px;
     background-color:white;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 .tab {
+    display:flex;
     width:300px;
-    height:850px;
+    height:700px;
 }
 .tab2{
     display:grid;
@@ -47,9 +48,15 @@ body{
     border-radius:15px;
     box-shadow: 0 0 10px black;
 }
-
-
 #currentSize {
     font-size: 55px;
     margin: 0 0 10px 37%
+}
+
+/*BUTTONS*/
+#clearBtn {
+    align-self: flex-end;
+    margin-left: 48px;
+    width:200px;
+    height: 70px;
 }
