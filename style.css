@@ -1,6 +1,7 @@
 body{
     background-color:black;
     padding:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 .container {
     display:flex;
@@ -13,6 +14,11 @@ body{
     width:300px;
     height:850px;
 }
+.tab2{
+    display:grid;
+     height: 150px;
+     width:700px;
+}
 
 #paintArea { 
     display: flex;
@@ -20,4 +26,30 @@ body{
     width:700px;
     height:700px;
     border: 2px solid black;
+}
+
+
+/*SLIDER*/
+#sliderSize{
+    appearance: none;
+    justify-self: center;
+    margin-top: 40px;
+    width:550px;
+    height: 20px;
+    background-color:rgb(188, 74, 74);
+    border-radius: 25px;
+}
+#sliderSize::-webkit-slider-thumb {
+    appearance: none;
+    width:30px;
+    height:40px;
+    background-color:aquamarine;
+    border-radius:15px;
+    box-shadow: 0 0 10px black;
+}
+
+
+#currentSize {
+    font-size: 55px;
+    margin: 0 0 10px 37%
 }
